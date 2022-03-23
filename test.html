@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="giaidacbiet">Giải đặc biệt:</p>
+    <p id="giainhat">Giải nhất:</p>
+    <p id="giainhi">Giải nhì:</p>
+    <p id="giaiba">Giải ba:</p>
+    <p id="giaitu">Giải tư:</p>
+    <p id="giainam">Giải năm:</p>
+    <p id="giaisau">Giải sáu:</p>
+    <p id="giaibay">Giải bảy:</p>
+
+
+    <button onclick="addrand()">Add</button>
+   
+    <script >
+        let rads = []; 
+        
+            function checkrand() {
+                let rand = Math.floor(Math.random() * 201);
+                if (!rads.includes(Math.floor(Math.random() * 201))) {
+                    rads.push(rand);
+                }
+                else {
+                    checkrand();
+                }
+
+            }
+            function addrand() {
+
+                for (let i = 0; i < 8; i++) {
+
+                 checkrand();
+                }
+                document.getElementById("giaidacbiet").innerHTML = " Giải đặc biệt: "  +  rads[0];
+                document.getElementById("giainhat").innerHTML = " Giải nhất  "  +  rads[1];
+                document.getElementById("giainhi").innerHTML = " Giải nhì  "  +  rads[2];
+                document.getElementById("giaiba").innerHTML = " Giải ba : "  +  rads[3];
+                document.getElementById("giaitu").innerHTML = " Giải tư : "  +  rads[4];
+                document.getElementById("giainam").innerHTML = " Giải năm :  "  +  rads[5];
+                document.getElementById("giaisau").innerHTML = " Giải  sáu : "  +  rads[6];
+                document.getElementById("giaibay").innerHTML = " Giải bảy : "  +  rads[7];
+
+            }
+              
+            
+            
+        
+
+
+
+    </script>
+</body>
+</html>

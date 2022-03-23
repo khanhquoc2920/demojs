@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header-top">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <ul>
+              
+            </ul>
+          </div>
+          <div class="col-md-9">
+            <ul>
+               <li><input type="text" placeholder="số tài khoản"></li>
+               <li><input type="text" placeholder="mật khẩu"></li>
+               <li><button type="button" class="btn btn-danger">Đăng nhập</button></li>
+               <li><button type="button" class="btn btn-danger">Đăng kí</button></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <ul>
+                <p><i class="ti-cup"></i> Nhãn hiệu</p>
+                <p> <i class="ti-download"></i> Tải xuống</p>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul>
+                <p><i class="fas fa-handshake"></i> Hợp tác</p>
+                <p><i class="fas fa-fire"></i> Phổ biến</p>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul>
+                <p><i class="fas fa-globe"></i> Trang mạng</p>
+                <p><i class="fas fa-comment-dollar"></i> Quảng cáo</p>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul>
+                <p><i class="fas fa-thumbs-up"></i> Độc quyền</p>
+                <p><i class="fas fa-user"></i> Người mới</p>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <p>Giờ việt nam :  Ngày 22 Tháng 03 Năm 2022</p>
+                <p>Người dùng trực tuyến : <strong>123151825</strong> </p>
+              </ul>
+            </div>
+          </div>
+          </div>
+      </div>
+      <!-- <div class="slider">
+        <img src="/image/title.jpg" alt="" srcset="" width="100%">
+      </div>
+      <div class="slider1">
+       
+        <h5><marquee > <i class="ti-volume"></i> Thông báo:Xin thông báo đến quý khách,
+           tài khoản ngân hàng đại diện có thể thay đổi liên tục.
+            Quý khách nạp tiền vui lòng truy cập vào web để lấy
+             số tài khoản ngân hàng. Nếu như quý khách tự chuyển
+              tiền vào số tài khoản không còn sử dụng đã đóng thì 
+              bên nhà cái chúng tôi sẽ KHÔNG CHỊU TRÁCH NHIỆM về số tiền đó.
+               Hiện nay, tình hình dịch bệnh ngày càng nghiêm trọng, 
+               kính mong quý khách thực hiện tốt các biện pháp tự bảo vệ bản thân,
+                vì sức khỏe của bản thân, gia đình và xã hội. Xin cảm ơn và c
+                húc quý khách cược nhiều may mắn!</marquee></h5>
+      
+      </div> -->
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <p>CHAT TRỰC TUYẾN</p>
+                      <button type="button" class="btn btn-primary">Đến sảnh chat >></button>
+                    </div>
+                    <div class="col-md-4">
+                      <h4>Kết quả giải đặc biệt</h4> 
+                      <div class="itemball">1</div>
+                      <div class="itemball">2</div>
+                      <div class="itemball">3</div>
+
+                    </div>
+                    <div class="col-md-4">
+                     <p>Thời gian lượt tiếp theo</p>
+                    </div>
+
+                  </div>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Giải</th>
+                        <th scope="col">Số</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Giải đặc biệt</td>
+                        <td id="giaidacbiet"></td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Giải nhất</td>
+                        <td id="giainhat"></td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Giải nhì</td>
+                        <td id="giainhi"></td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Giải ba</td>
+                        <td id="giaiba"></td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Giải tư</td>
+                        <td id="giaitu"></td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Giải năm</td>
+                        <td id="giainam"></td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Giải sáu</td>
+                        <td id="giaisau"></td>
+                      
+                      </tr>
+                      <tr>
+                        <th scope="row">8 </th>
+                        <td>Giải bảy</td>
+                        <td id="giaibay"></td>
+                      
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <br>
+                  <button class="btn btn-danger" onclick="addrand(100,300)" id="addrand">Quay giải</button>
+
+                  <button class="btn btn-primary"  onclick="checkve(100,300)">Quay số </button>
+                </div>
+                
+                <div class="col-md-3">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>22/3/2022</option>
+                    <option value="1">21/3/2022</option>
+                    <option value="2">20/3/2022</option>
+                    <option value="3">19/3/2022</option>
+                    <option value="3">18/3/2022</option>
+                  </select>
+                  <table class="table">
+                    <thead class="thead-secondary">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Giải</th>
+                        <th scope="col">Số</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Giải đặc biệt</td>
+                        <td><strong>123</strong></td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Giải nhất</td>
+                        <td>123</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Giải nhì</td>
+                        <td>123</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Giải ba</td>
+                        <td>123</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Giải tư</td>
+                        <td>123</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>Giải năm</td>
+                        <td>123</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>Giải sáu</td>
+                        <td>123</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">8</th>
+                        <td>Giải bảy</td>
+                        <td>123</td>
+                        
+                      </tr>
+                      <tr>
+                        <th scope="row">9</th>
+                        <td>Giải nhất</td>
+                        <td>123</td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+                  <img src="/image/xo-so-gif.gif" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top">
+        
+        <img src="/image/icon-banks.png" alt="" srcset="" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="/image/icon-email.png" alt="" srcset="">
+              <p>rose@gmail.com</p> 
+            </div>
+            <div class="col-md-3">
+              <img src="/image/icon-phone.png" alt="" srcset="">
+              <p>0869280017</p> 
+            </div>
+            <div class="col-md-3">
+              <img src="/image/icon-security.png" alt="" srcset="">
+              <p>Chống hack</p>
+            </div>
+            <div class="col-md-3">
+              <img src="/image/icon-service.png" alt="" srcset="">
+              <p>Chăm sóc khách hàng</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="footer-bottom">
+        <img src="/image/icon-pays.png" alt="" srcset="" >
+        <p>COPYRIGHT : KHANHROSE</p>
+      </div>
+</body>
+<script type='text/javascript' src='/webforms/ExperianEmailJsScripts/jquery/js/jquery.jsonp-2.4.0.js'></script>
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="/static/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
