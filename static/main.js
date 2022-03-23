@@ -16,7 +16,14 @@ let rads = [];
                 }
                 document.getElementById("addrand").style.display="none";
             }
-        
+            switch (key) {
+                case value:
+                    
+                    break;
+            
+                default:
+                    break;
+            }
             function checkve(min,max ){
                 let rand = Math.floor((Math.random() * (max - min)) + min);
                 switch (rand) {
@@ -58,3 +65,14 @@ let rads = [];
                 
             }
         
+            function startTime() {
+                const date = new Date();
+                document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+                setTimeout(function() {startTime()}, 1000);
+              }
+            document.querySelector('jsuites-calendar').addEventListener('onchange', function(e) {
+                console.log('New value: ' + e.target.value);
+            });
+            document.querySelector('jsuites-calendar').addEventListener('onclose', function(e) {
+                console.log('Calendar is closed');
+            });

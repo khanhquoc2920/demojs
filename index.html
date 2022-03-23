@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<body onload="startTime()">
     <div class="header-top">
         <div class="container">
         <div class="row">
@@ -103,6 +104,7 @@
                     </div>
                     <div class="col-md-4">
                      <p>Thời gian lượt tiếp theo</p>
+                     <p id="demo">3</p>
                     </div>
 
                   </div>
@@ -174,13 +176,7 @@
                 </div>
                 
                 <div class="col-md-3">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>22/3/2022</option>
-                    <option value="1">21/3/2022</option>
-                    <option value="2">20/3/2022</option>
-                    <option value="3">19/3/2022</option>
-                    <option value="3">18/3/2022</option>
-                  </select>
+                  <jsuites-calendar value="2020-01-20" format="DD/MM/YYYY"></jsuites-calendar>
                   <table class="table">
                     <thead class="thead-secondary">
                       <tr>
@@ -287,6 +283,8 @@
 <script type='text/javascript' src='/webforms/ExperianEmailJsScripts/jquery/js/jquery.jsonp-2.4.0.js'></script>
 <script src="//code.jquery.com/jquery.js"></script>
 <script src="static/main.js"></script>
+<script src="https://jsuites.net/v4/jsuites.js"></script>
+<script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

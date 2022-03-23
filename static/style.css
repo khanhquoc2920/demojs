@@ -121,6 +121,10 @@
     padding: 10px 10px;
     
 }
+.content .col-md-12  .col-md-3 jsuites-calendar {
+    padding-left: 10px;
+    border-radius: 2px;
+}
 .content .col-md-12  .col-md-3 select{
     padding: 10px 40px;
     width: 100%;
